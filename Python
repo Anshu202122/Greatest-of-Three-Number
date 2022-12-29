@@ -1,0 +1,17 @@
+class Number():
+    def greatest(self,a,b,c):
+        self.a1=a
+        self.a2=b
+        self.a3=c
+        if self.a1>self.a2 and self.a2>self.a3:
+            return self.a1
+        elif self.a2>self.a3:
+            return self.a2
+        else:
+            return self.a3
+o1=Number()
+x=int(input("Enter first Number:"))
+y=int(input("Enter second Number:"))
+z=int(input("Enter third Number:"))
+s=o1.greatest(x,y,z)
+print("Greatest Number is:",s)
